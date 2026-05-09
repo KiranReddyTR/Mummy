@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <title>Happy Mother's Day Mummy 💐</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="locked">
+
+  <!-- Floating Hearts Canvas -->
+  <canvas id="heartsCanvas"></canvas>
+
+  <!-- ─────────────────────────────────────────
+       SECTION 1 · HERO
+  ───────────────────────────────────────── -->
+  <section class="hero" id="hero">
+    <div class="hero__bg-gradient"></div>
+    <div class="hero__orb hero__orb--1"></div>
+    <div class="hero__orb hero__orb--2"></div>
+    <div class="hero__orb hero__orb--3"></div>
+
+    <div class="hero__content">
+      <!-- Photo -->
+      <div class="hero__photo-wrap" data-animate="fade-down">
+        <div class="hero__photo-ring"></div>
+        <div class="hero__photo-ring hero__photo-ring--2"></div>
+        <div class="hero__photo-img-wrap">
+          <img
+            src="Mummy.jpeg"
+            alt="Mummy"
+            class="hero__photo"
+          />
+        </div>
+        <div class="hero__photo-glow"></div>
+      </div>
+
+      <!-- Text -->
+      <div class="hero__text" data-animate="fade-up">
+        <p class="hero__eyebrow">With all my love</p>
+        <h1 class="hero__title">Happy Mother's Day<br /><span class="hero__title-accent">Mummy</span> 💐</h1>
+        <p class="hero__subtitle">The strongest woman in my life.</p>
+      </div>
+
+      <!-- CTA -->
+      <div class="hero__cta" data-animate="fade-up" data-delay="300">
+        <div class="btn-glow-wrap">
+          <div class="btn-pulse-ring"></div>
+          <div class="btn-pulse-ring btn-pulse-ring--2"></div>
+          <button class="btn-glow" onclick="scrollToSection('appreciation')">
+            <span class="btn-glow__text">Open My Heart ❤️</span>
+            <span class="btn-glow__shine"></span>
+          </button>
+        </div>
+        <p class="btn-hint">✨ Tap to begin</p>
+      </div>
+
+      <!-- Scroll hint -->
+      <div class="hero__scroll-hint" data-animate="fade-up" data-delay="600">
+        <div class="scroll-dot"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────────
+       SECTION 2 · APPRECIATION
+  ───────────────────────────────────────── -->
+  <section class="appreciation section--locked" id="appreciation">
+    <div class="appreciation__bg"></div>
+    <div class="appreciation__orb"></div>
+
+    <div class="appreciation__inner">
+      <!-- Decorative top -->
+      <div class="deco-line" data-animate="fade-up"></div>
+
+      <p class="section-eyebrow" data-animate="fade-up">A letter from the heart</p>
+
+      <div class="glass-card" data-animate="fade-up" data-delay="100">
+        <div class="glass-card__inner">
+          <div class="glass-card__quote-mark">"</div>
+          <p class="glass-card__text">
+            Mummy, there are no words grand enough to describe what you mean to me.
+            You are the warmth in every morning, the calm in every storm, and the
+            love that has shaped every part of who I am.
+          </p>
+          <div class="glass-card__divider"></div>
+          <p class="glass-card__text glass-card__text--light">
+            You sacrificed silently, loved unconditionally, and gave endlessly —
+            never asking for anything in return. Every meal you cooked, every night
+            you stayed awake, every prayer you whispered for me — I felt it all.
+          </p>
+          <div class="glass-card__divider"></div>
+          <p class="glass-card__text">
+            Today and every day, I want you to know: <em>you are my greatest blessing.</em>
+            Thank you for being my first home, my safest place, and my forever hero.
+          </p>
+          <div class="glass-card__signature">
+            <span>— Your child, always 🌸</span>
+          </div>
+        </div>
+        <!-- Decorative blobs inside card -->
+        <div class="glass-card__blob glass-card__blob--1"></div>
+        <div class="glass-card__blob glass-card__blob--2"></div>
+      </div>
+
+      <!-- Floating petals row -->
+      <div class="petals-row" data-animate="fade-up" data-delay="200">
+        <span class="petal">🌸</span>
+        <span class="petal petal--delay-1">🌷</span>
+        <span class="petal petal--delay-2">💕</span>
+        <span class="petal petal--delay-3">🌸</span>
+        <span class="petal petal--delay-4">🌷</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────────
+       SECTION 3 · MEMORY
+  ───────────────────────────────────────── -->
+  <section class="memory section--locked" id="memory">
+    <div class="memory__bg"></div>
+    <div class="memory__orb memory__orb--1"></div>
+    <div class="memory__orb memory__orb--2"></div>
+
+    <div class="memory__inner">
+      <p class="section-eyebrow" data-animate="fade-up">Our story</p>
+      <h2 class="section-title" data-animate="fade-up" data-delay="100">
+        Moments I treasure forever
+      </h2>
+
+      <!-- Memory card -->
+      <div class="memory-card" data-animate="scale-up" data-delay="200">
+        <div class="memory-card__img-wrap">
+          <img
+            src="Family.jpeg"
+            alt="Family Memory"
+            class="memory-card__img"
+          />
+          <div class="memory-card__img-overlay"></div>
+        </div>
+        <div class="memory-card__caption">
+          <span class="memory-card__caption-icon">❤️</span>
+          <span>My happiest place</span>
+        </div>
+      </div>
+
+      <!-- Stats / feelings row -->
+      <div class="feelings-row" data-animate="fade-up" data-delay="300">
+        <div class="feeling-chip">
+          <span class="feeling-chip__icon">🤍</span>
+          <span class="feeling-chip__label">Unconditional Love</span>
+        </div>
+        <div class="feeling-chip">
+          <span class="feeling-chip__icon">🌿</span>
+          <span class="feeling-chip__label">Endless Strength</span>
+        </div>
+        <div class="feeling-chip">
+          <span class="feeling-chip__icon">✨</span>
+          <span class="feeling-chip__label">Pure Warmth</span>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────────
+       SECTION 4 · ENDING
+  ───────────────────────────────────────── -->
+  <section class="ending section--locked" id="ending">
+    <div class="ending__bg"></div>
+    <div class="ending__orb ending__orb--1"></div>
+    <div class="ending__orb ending__orb--2"></div>
+    <div class="ending__orb ending__orb--3"></div>
+
+    <div class="ending__inner">
+      <div class="ending__icon" data-animate="fade-down">🌸</div>
+
+      <h2 class="ending__title" data-animate="fade-up" data-delay="100">
+        Thank you for everything<br />
+        <span class="ending__title-accent">Mummy</span> 🌸
+      </h2>
+
+      <p class="ending__subtitle" data-animate="fade-up" data-delay="200">
+        No distance, no time, no words could ever measure<br />
+        how deeply you are loved.
+      </p>
+
+      <div class="ending__hearts-row" data-animate="fade-up" data-delay="300">
+        <span class="big-heart big-heart--1">💗</span>
+        <span class="big-heart big-heart--2">💖</span>
+        <span class="big-heart big-heart--3">💗</span>
+      </div>
+
+      <div class="ending__badge" data-animate="fade-up" data-delay="400">
+        <span class="ending__badge-text">Made with love ❤️</span>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
